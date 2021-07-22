@@ -1,0 +1,191 @@
+header {
+    max-width: 1440px;
+    margin:0 auto;
+    width: 80%;
+    @include d-flex(flex, row, space-between, center);
+    padding-top: 19px;
+    padding-bottom: 19px;
+    a {
+        // padding-left: 27px;
+        color: #FA6980;
+        font-size: $small-font;
+    }
+    nav ul {
+        @include d-flex(flex, row, space-between, center);
+        li{
+            padding-right: 27px;
+            a {
+                color: $footer-color;
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: 700;
+                &:hover {
+                    color: $nav-color;
+                }
+            }
+        .home {
+            color: $nav-color;
+        }
+    
+    }
+    }
+    .burger-icon  {
+                display: none;
+                .mobile-nav {
+                    position: relative;
+                    ul {
+                        position: absolute;
+                        right: 0;
+                        top:0;
+                        color: #FFFFFF;
+                        width: 100%;
+                        height: 100%;
+                        display: none;
+                    }
+                }
+            }
+}
+.bg-image {
+    background-image: linear-gradient(to bottom, #bbccdd2e, #30516c), url(../images/image.png);
+    background-repeat: no-repeat;
+    max-width: 580px;
+    width: $width-100;
+    height: 500px;
+    @include d-flex(flex, column, center, center);
+    border-radius: $border-radius;
+    .content{
+        @include d-flex(flex, column, center, center);
+        max-width: $size-360;
+        height: 190px;
+        width: $width-100;
+        margin: 0 auto;
+        text-align: center; 
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $white-color;
+            margin-bottom: $padding-margin;
+        }
+        .line {
+            width: 40px;
+            border-bottom: 2px solid #FF8A00;
+        }
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            padding-top: $padding-margin;
+            color: $white-color;
+        }
+    } 
+}
+.section1, .section2, .footer {
+    max-width: 1160px;
+    width: $width-100;
+    margin: 0 auto; 
+    margin-top: 40px;
+    @include d-flex(flex, row, space-between, center);
+}
+.form-wrapper {
+    // width: 580px;
+    // padding: 110px;
+    width:40%;
+    // background: #30516c;
+.form {
+    @include d-flex(flex, column, space-between, flex-start);
+    width:100%;
+    input, select {
+        max-width: $size-360;
+        width: $width-100;
+        height: 40px;
+        margin-bottom: 40px;
+        @include border(0.4px, solid, $input-color);
+        border-radius: $border-radius;
+    }
+    label {
+        color: #202124;
+        font-size: $small-font;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    select {
+        color: #A6ADB4;
+        font-size: 13px;
+        padding-left: 20px;
+    }
+}
+button {
+    border: none;
+    background-color: #FA6980;
+    color: $white-color;
+    border-radius: $border-radius;
+    width: 134px;
+    height: 40px;
+}
+}
+
+.section2 {
+    width:96%;
+    h2 {
+        max-width: $size-360;
+        width: $width-100;
+        color: #202124;
+        font-size:20px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+    .paragraph {
+        max-width: $size-360;
+        color: $footer-color;
+        padding: 41px 10px 0 10px;
+        
+    }
+    .mins {
+        margin-top: $padding-margin;
+    }
+}
+
+footer {
+    background-color: $footer-color;
+    .footer {
+        padding: 56px 0;
+        @include d-flex(flex, row, space-around, center);
+        .first-part-footer {
+            max-width: 378px;
+            width: $width-100;
+            @include d-flex(flex, row, space-between, flex-start);
+            .lists li a, .logo a {
+                color:$input-color;
+                font-size: $small-font;
+                font-weight: 700;
+                margin-bottom: 8px;
+                }
+        }
+        p {
+            color:$input-color;
+            font-size: $small-font;
+            font-weight: 700;
+        }
+        input[type="email"]{
+            width: 262px;
+            background-color: $footer-color;
+            @include border(0.5px, solid, $input-color);
+            border-radius: $border-radius;
+            margin-bottom: 16px;  
+            padding: 16px;
+            &::placeholder {
+                    padding: $padding-margin;
+                    color: $input-color;
+            }
+        } 
+        .icons {
+            width: 160px;
+            @include d-flex(flex, row, space-between, center);
+            i {
+                font-size: 16px;
+                color: $white-color;
+            }
+        }
+    }
+}
